@@ -1,0 +1,1 @@
+Raman spectra are obtained for three random cells regions. The signal comes with a level a noise. An initial data analysis step is performed by computing the power spectrum density (PSD) of all patient spectra to evaluate the noisy components of the signals. 

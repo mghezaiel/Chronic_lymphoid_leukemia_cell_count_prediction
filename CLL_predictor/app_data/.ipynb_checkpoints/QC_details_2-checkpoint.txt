@@ -1,0 +1,3 @@
+Noise is associated with constant PSD when frequency varies. According to the plot, the region of interest (ie: with maximum amount of signal) is found for frequencies below 2 Hz. Frequency components above this threshold are considered to be noise.
+
+The QC protocol consists in defining a measure of true signal by computing the cumulated spectral density above 2Hz (CSD). Spectra with log CSD below a threshold (default = median) are removed from the dataset. 

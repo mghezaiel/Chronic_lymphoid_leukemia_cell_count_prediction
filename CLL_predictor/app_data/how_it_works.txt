@@ -1,0 +1,23 @@
+# How it works  
+
+## Displayed informations
+
+The app is composed by a sidebar and two central panels. The sidebar contains a slider that adjusts the number of filtered spectra. The upper panel shows the cumulated spectral density for all patients while the lower panel shows the Raman spectra for a specific patient. Plots can be zoomed Cell counts tables are displayed for all and specific patients on the right side of the panels. 
+	
+### Left sidebar	
+a.	**Slider:** It adjusts the number of filtered spectra by keeping those with a cumulated spectral density (CSD) above the selected threshold. This is shown 
+as a white dashed line on the upper panel scatterplot.  
+
+b.	**Select patient:** It selects a patient from the list of available patients then display its Raman spectra on the lower panel. The number of spectra is updated when a different CSD threshold is set. 
+
+c.	**Download buttons:** Adjustment of the CSD threshold results in different by patient spectra and cell numbers. The download buttons allows to download processed datasets from all or specific patients. The files are encoded in csv format. 
+
+### Upper panel 
+d.	**Cumulated spectral density (CSD):** The plot shows the cumulated spectral density by spectra. This corresponds to a measure of denoised signal in the data. Adjustment of the CSD threshold (left sidebar) affects the number of spectra. The upper selection box allows to color the spectra by patient state (healthy/LLC) or by cell type (B/TNK). Patients can be selected by clicking on a point of the plot.  
+
+e.	**Cell count table:** The table shows the number of B cells and TNK cells before (raw data) and after QC (ie: default or modified CSD threshold). A fisher exact test validates the QC step by testing whether the filtering method is biased toward a particular cell type. Uncorrected multiple tests are performed for each patient and p value quantiles are shown. 
+
+### Lower panel 
+f.	**Raman spectra:** The plot shows the raman spectra for a selected patient. The patient can be selected either by clicking on a point of the CSD plot or by using the sidebar selection box. Amplitude of the Raman spectra are shown as a function of the excitation wavelength.
+
+g.	**Cell count table:** The table shows the by patient number of B cells and TNK cells before (raw data) and after QC. A fisher exact test evaluates the association between the QC method and a particular cell type. High p values at alpha = 0.05 means that the B/TNK ratio is not modified by the filtering method and thus provides confidence on the LLC diagnosis. Cell fractions **after QC** are displayed as b cell fraction, TNK fraction and B/TNK ratio.
