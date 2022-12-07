@@ -4,7 +4,9 @@ Author: GHEZAIEL Morad
 email: Ghezaiel.morad@gmail.com
 
 
-This tool allows to count lymphoid cell using Raman spectroscopy data. 
+This tool was developed for the analysis of a Raman spectroscopy dataset obtained from patients with a Chronic lymphoid leukemia prognostic.
+The tools allows to process and filter signal from lymphoid cells Raman spectra resulting in different by patient cell counts. 
+It then performs a fisher exact test to check if the ratio of B/T-NK cells are consistent with the prognostic. 
 
 ## Docker installation:  
 
